@@ -1,0 +1,25 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase (now unused for deployment)",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "echo 'Firebase emulator for functions not needed for Vercel'",
+    "shell": "echo 'Firebase functions shell not needed for Vercel'",
+    "start": "echo 'Start script not needed for Vercel'",
+    "deploy": "echo 'Deploy script not needed for Vercel - use firebase deploy --only hosting'",
+    "logs": "echo 'Logs not needed for Vercel'"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "openai": "^4.x.x"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}

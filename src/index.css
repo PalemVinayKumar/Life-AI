@@ -1,0 +1,79 @@
+/* src/index.css */
+:root {
+  --background-dark: #1e1e2d; /* Dark background, similar to image */
+  --surface-dark: #27293d; /* Slightly lighter dark for cards/sections */
+  --primary-purple: #8a41f0; /* Vibrant purple */
+  --primary-purple-hover: #7334cc; /* Darker purple for hover */
+  --text-light: #e0e0e0; /* Light text for dark background */
+  --text-secondary: #a0a0a0; /* Secondary text color */
+  --border-color: #3a3b4e; /* Subtle border for elements */
+  --accent-blue: #007bff; /* Existing blue, can be adapted */
+  --accent-red: #dc3545; /* Existing red */
+  --accent-green: #28a745; /* Existing green */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* A modern font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-y: scroll; /* Allow scrolling for main content */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Basic reset/global adjustments */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--primary-purple);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-purple-hover);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+input, textarea {
+  background-color: var(--surface-dark);
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-secondary);
+}
