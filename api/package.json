@@ -1,0 +1,10 @@
+{
+  "name": "life-os-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "process-plan.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",  
+    "openai": "^4.x.x"           
+  }
+}
